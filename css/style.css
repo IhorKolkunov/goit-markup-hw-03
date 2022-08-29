@@ -10,6 +10,19 @@ body {
     color: var(--title-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ul {
+    padding-left: 0px;
+}
+
 .list {
     list-style: none;
 }
@@ -19,7 +32,33 @@ body {
 
 /* ======== HEADER ======== */
 
+.conteiner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation-margin {
+    margin-right: 50px;
+}
+.navigation-margin:last-child {
+    margin-right: 0px;
+}
+
 .logo {
+    margin-right: 94px;
+
     color: var(--secondary-color);
     font-family: 'Raleway', sans-serif; 
     font-weight: 700;
@@ -49,12 +88,27 @@ body {
 .contacts-address {
     color: var(--text-color);
 }
+/* ======== HERO / OUR ADVANTAGES / WHAT DO WE DO / OUR TEAM ======== */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* ======== HERO ======== */
+
 .hero-background {
     background-color: #2F303A;
 }
+
+.hero-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .hero {
+    margin-bottom: 40px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -64,26 +118,51 @@ body {
 }
 
 .hero-button {
+    padding: 10px 32px;
+    border-radius: 4px;
+
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-     letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
     color: var(--revers-color);
     background-color: var(--secondary-color);
 }
 
 /* ======== OUR ADVANTAGES ======== */
+
 .background-team {
     background-color: #F5F4FA;
 }
 .advantages {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
+.advantages-padding {
+    padding-bottom: 0;
+}
+
+.advantages-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.advantages-margin {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
 .advantages-text {
     font-size: 14px;
     line-height: 1.71;
@@ -91,9 +170,27 @@ body {
     color: var(--text-color);
 }
 
+/* ======== WHAT DO WE DO ======== */
+
+.work-photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.work-photo-items {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
 /* ======== WHAT DO WE DO & OUR TEAM ======== */
 
 .main-heading {
+    margin-bottom: 50px;
+
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -101,6 +198,19 @@ body {
 }
 
 /* ======== OUR TEAM ======== */
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.team-items {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+}
 
 .name-expert {
     font-weight: 500;
@@ -116,8 +226,13 @@ body {
 }
 
 /* ======== FOOTER ======== */
+.footer-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-.logo-color-footer {
+
+.footer-logo-color {
      color: var(--revers-color);
 }
 
@@ -126,12 +241,19 @@ body {
 }
 
 .footer-address {
+    padding-top: 20px;
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--revers-color);
 }
+
+.footer-items-padding {
+    margin-top: 9px;
+}
+
 .footer-address-color {
     color: #ffffff99;;
 }
