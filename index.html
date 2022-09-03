@@ -7,7 +7,10 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list navigation-flex">
+        <ul class="list navigation-flex-contact">
           <li class="navigation-margin">
             <a
               class="link navigation-menu contacts-address"
@@ -69,7 +72,7 @@
       <!-- ======== HERO ======== -->
 
       <section class="hero-background section">
-        <div class="conteiner hero-flex">
+        <div class="conteiner">
           <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button">Замовити послугу</button>
         </div>
@@ -164,8 +167,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-expert">Ігор Дем'яненко</h3>
-              <p class="profession" lang="en">Product Designer</p>
+              <div class="conteiner-cards">
+                <h3 class="name-expert">Ігор Дем'яненко</h3>
+                <p class="profession" lang="en">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-items">
@@ -175,8 +180,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-expert">Ольга Рєпіна</h3>
-              <p class="profession" lang="en">Frontend Developer</p>
+              <div class="conteiner-cards">
+                <h3 class="name-expert">Ольга Рєпіна</h3>
+                <p class="profession" lang="en">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-items">
@@ -186,8 +193,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-expert">Микола Тарасов</h3>
-              <p class="profession" lang="en">Marketing</p>
+              <div class="conteiner-cards">
+                <h3 class="name-expert">Микола Тарасов</h3>
+                <p class="profession" lang="en">Marketing</p>
+              </div>
             </li>
 
             <li class="team-items">
@@ -197,8 +206,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name-expert">Михайло Єрмаков</h3>
-              <p class="profession" lang="en">UI Designer</p>
+              <div class="conteiner-cards">
+                <h3 class="name-expert">Михайло Єрмаков</h3>
+                <p class="profession" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -208,7 +219,7 @@
     <!-- ======== FOOTER ======== -->
 
     <footer class="footer-background">
-      <div class="conteiner footer-padding">
+      <div class="conteiner">
         <a class="logo link" href="./index.html" lang="en">
           Web<span class="footer-logo-color">Studio</span>
         </a>
