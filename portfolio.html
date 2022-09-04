@@ -7,7 +7,10 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,20 +23,22 @@
   <body>
     <!-- ======== HEADER ======== -->
 
-    <header class="header-border">
-      <div class="conteiner navigation-flex conteiner-padding">
+    <header class="header-padding header-border">
+      <div class="conteiner navigation-flex ">
         <nav class="navigation-flex">
           <a class="logo link" href="./index.html" lang="en">
             Web<span class="logo-color-header">Studio</span>
           </a>
           <ul class="list navigation-flex">
             <li class="navigation-margin">
-              <a class="link navigation-menu" href="./index.html">Студія</a>
+              <a
+                class="link navigation-menu"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="navigation-margin">
-              <a
-                class="link navigation-menu navigation-menu-active"
-                href="./portfolio.html"
+              <a class="link navigation-menu navigation-menu-active" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -42,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list navigation-flex">
+        <ul class="list navigation-flex-contact">
           <li class="navigation-margin">
             <a
               class="link navigation-menu contacts-address"

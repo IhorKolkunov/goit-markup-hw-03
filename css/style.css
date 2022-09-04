@@ -37,10 +37,6 @@ img {
 
 /* ======== HEADER ======== */
 
-.header-border {
-    border-bottom: 1px solid #ECECEC;
-}
-
 .conteiner {
     width: 1200px;
     margin-left: auto;
@@ -60,6 +56,11 @@ img {
     align-items: center;
 
     margin-left: auto;
+}
+
+.header-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .conteiner-padding {
@@ -240,14 +241,17 @@ img {
 }
 
 .conteiner-cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     border-radius: 0px 0px 4px 4px;
     border-top: none;
     background-color: var(--revers-color);
 }
 
 .name-expert {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    /* margin-top: 30px; */
+    margin-bottom: 10px;
     text-align: center;
 
     font-weight: 500;
@@ -256,8 +260,6 @@ img {
     letter-spacing: 0.03em;
 }
 .profession {
-    padding-bottom: 30px;
-
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
@@ -298,6 +300,12 @@ img {
 .footer-address-color:hover,
 .footer-address-color:focus {
     color: var(--secondary-color);
+}
+
+/* ======================= HEADER PORTFOLIO ============================ */
+
+.header-border {
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* ======================= PORTFOLIO ============================ */
